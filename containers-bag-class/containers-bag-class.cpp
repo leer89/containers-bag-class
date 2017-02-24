@@ -23,6 +23,18 @@ again. Each age is removed from the ages bag when it is typed, stopping
 when the bag is empty.
 */
 
+class bag
+{
+public:
+	// TYPEDEFS and MEMBER CONSTANTS
+	typedef int value_type;
+	typedef std::size_t size_type;
+	static const size_type CAPACITY = 30;
+private:
+	value_type data[CAPACITY]; // create an array of type integer that stores items
+	size_type used; // 
+};
+
 int main()
 {
 	bag ages;
